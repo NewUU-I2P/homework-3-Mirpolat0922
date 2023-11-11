@@ -1,6 +1,7 @@
 #include <string>
+using namespace ;
 
-std::string problemSolution3(float height, char S) {
+string problemSolution3(float height, char S) {
     // write your code here
     string sex,result;
     double length;
