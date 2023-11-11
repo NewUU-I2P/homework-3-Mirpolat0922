@@ -1,8 +1,7 @@
 float problemSolution2(float i, float j, float k) {
     float result;
     // write your code here;
-    double price1, price2, price3;
-    cin >> price1>>price2>>price3;
-    result = (price1 > price2) ? ((price1 > price3) ? price1 : price3) : ((price2 > price3) ? price2 : price3);
+    cin >> i>>j>>k;
+    result = (i > j) ? ((i > k) ? i : k) : ((j > k) ? j : k);
     return result;
 }
