@@ -12,7 +12,7 @@ std::string problemSolution3(float height, char S) {
             }else if(length>= 1.7 and length <1.85){
                 result = "Normal";
             }else{
-                result = "Tall"
+                result = "Tall";
             }
         case "Female":
             if(length<1.6){
@@ -20,7 +20,7 @@ std::string problemSolution3(float height, char S) {
             }else if(length>= 1.6 and length <1.75){
                 result = "Normal";
             }else{
-                result = "Tall"
+                result = "Tall";
             }
     }
     return result;
