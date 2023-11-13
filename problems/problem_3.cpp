@@ -1,28 +1,26 @@
 #include <string>
-using namespace ;
 
-string problemSolution3(float height, char S) {
+std::string problemSolution3(float height, char S) {
     // write your code here
-    string sex,result;
-    double length;
-    cin>>sex<<length;
-    switch(sex){
-        case "Male":
-            if(length<1.7){
-                result = "Short";
-            }else if(length>= 1.7 and length <1.85){
-                result = "Normal";
-            }else{
-                result = "Tall";
-            }
-        case "Female":
-            if(length<1.6){
-                result = "Short";
-            }else if(length>= 1.6 and length <1.75){
-                result = "Normal";
-            }else{
-                result = "Tall";
-            }
+    std::string result;
+    if(S == 'M'){
+        if(height < 1.7){
+            result = "Short";
+        }
+        else if(height >= 1.7 && height < 1.85){
+            result = "Normal";
+        } else if(height >= 1.85) {
+            result = "Tall";
+        }
+    }
+    if(S == 'F'){
+        if(height < 1.6){
+            result = "short";
+        } else if(height >= 1.6 && height < 1.75){
+            result = "Normal";
+        } else if(height >= 1.75){
+            result = "Tall";
+        }
     }
     return result;
     // use return to return your result
